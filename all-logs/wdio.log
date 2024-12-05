@@ -1,0 +1,16 @@
+2024-12-05T11:51:54.134Z INFO @wdio/cli:launcher: Run onPrepare hook
+2024-12-05T11:51:54.262Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-12-05T11:51:54.262Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-12-05T11:51:54.263Z INFO @wdio/local-runner: Start worker 0-0 with arg: run wdio.conf.js
+2024-12-05T11:51:54.271Z INFO @wdio/local-runner: Start worker 1-0 with arg: run wdio.conf.js
+2024-12-05T11:51:57.061Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-12-05T11:51:57.074Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-12-05T11:51:57.075Z INFO @wdio/local-runner: Start worker 0-0 with arg: run wdio.conf.js
+2024-12-05T11:51:59.548Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-12-05T11:51:59.640Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-12-05T11:51:59.648Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-12-05T11:51:59.648Z INFO @wdio/local-runner: Start worker 1-0 with arg: run wdio.conf.js
+2024-12-05T11:52:04.264Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-12-05T11:52:04.264Z INFO @wdio/cli:launcher: Run onComplete hook
+2024-12-05T11:52:04.300Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-12-05T11:52:04.564Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

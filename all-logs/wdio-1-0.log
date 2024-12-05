@@ -1,0 +1,90 @@
+2024-12-05T11:52:00.454Z INFO @wdio/local-runner: Run worker command: run
+2024-12-05T11:52:01.100Z WARN @wdio/mocha-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialized.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): file:///C:/Users/Elena/Desktop/Practice2/test/specs/test.specs.js
+Error: SyntaxError[ @C:\Users\Elena\Desktop\Practice2\test\specs\test.specs.js ]: Identifier 'assert' has already been declared
+    at compileSourceTextModule (node:internal/modules/esm/utils:338:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:102:18)
+    at #translate (node:internal/modules/esm/loader:437:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:484:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:115:19)
+2024-12-05T11:52:01.104Z INFO webdriver: Initiate new session using the WebDriver protocol
+2024-12-05T11:52:01.509Z INFO webdriver: Setting up firefox vnightly_135.0a1
+2024-12-05T11:52:01.517Z INFO geckodriver: Starting Geckodriver at C:\Users\Elena\AppData\Local\Temp\geckodriver.exe with params: --port=58883 --allow-hosts=localhost --host=0.0.0.0 --websocket-port=0
+2024-12-05T11:52:02.533Z INFO @wdio/utils: Started GeckoDriver in 1256ms on port 58883
+2024-12-05T11:52:02.538Z INFO webdriver: [POST] http://localhost:58883/session
+2024-12-05T11:52:02.538Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'firefox',
+      'moz:firefoxOptions': [Object],
+      webSocketUrl: true,
+      unhandledPromptBehavior: 'ignore'
+    },
+    firstMatch: [ {} ]
+  }
+}
+2024-12-05T11:52:02.549Z WARN webdriver: WebDriverError: Request failed with error code ECONNREFUSED when running "http://localhost:58883/session" with method "POST" and args "{"capabilities":{"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"binary":"C:\\Users\\Elena\\AppData\\Local\\Temp\\firefox\\win64-nightly_135.0a1\\firefox\\firefox.exe","args":["-headless"],"prefs":{"browser.startup.homepage":"about:blank"}},"webSocketUrl":true,"unhandledPromptBehavior":"ignore"},"firstMatch":[{}]}}"
+2024-12-05T11:52:02.549Z INFO webdriver: Retrying 1/3
+2024-12-05T11:52:02.549Z INFO webdriver: [POST] http://localhost:58883/session
+2024-12-05T11:52:02.549Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'firefox',
+      'moz:firefoxOptions': [Object],
+      webSocketUrl: true,
+      unhandledPromptBehavior: 'ignore'
+    },
+    firstMatch: [ {} ]
+  }
+}
+2024-12-05T11:52:03.062Z WARN webdriver: WebDriverError: Request failed with error code ECONNREFUSED when running "http://localhost:58883/session" with method "POST" and args "{"capabilities":{"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"binary":"C:\\Users\\Elena\\AppData\\Local\\Temp\\firefox\\win64-nightly_135.0a1\\firefox\\firefox.exe","args":["-headless"],"prefs":{"browser.startup.homepage":"about:blank"}},"webSocketUrl":true,"unhandledPromptBehavior":"ignore"},"firstMatch":[{}]}}"
+2024-12-05T11:52:03.062Z INFO webdriver: Retrying 2/3
+2024-12-05T11:52:03.062Z INFO webdriver: [POST] http://localhost:58883/session
+2024-12-05T11:52:03.062Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'firefox',
+      'moz:firefoxOptions': [Object],
+      webSocketUrl: true,
+      unhandledPromptBehavior: 'ignore'
+    },
+    firstMatch: [ {} ]
+  }
+}
+2024-12-05T11:52:04.080Z WARN webdriver: WebDriverError: Request failed with error code ECONNREFUSED when running "http://localhost:58883/session" with method "POST" and args "{"capabilities":{"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"binary":"C:\\Users\\Elena\\AppData\\Local\\Temp\\firefox\\win64-nightly_135.0a1\\firefox\\firefox.exe","args":["-headless"],"prefs":{"browser.startup.homepage":"about:blank"}},"webSocketUrl":true,"unhandledPromptBehavior":"ignore"},"firstMatch":[{}]}}"
+2024-12-05T11:52:04.080Z INFO webdriver: Retrying 3/3
+2024-12-05T11:52:04.080Z INFO webdriver: [POST] http://localhost:58883/session
+2024-12-05T11:52:04.080Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'firefox',
+      'moz:firefoxOptions': [Object],
+      webSocketUrl: true,
+      unhandledPromptBehavior: 'ignore'
+    },
+    firstMatch: [ {} ]
+  }
+}
+2024-12-05T11:52:04.084Z ERROR webdriver: WebDriverError: Request failed with error code ECONNREFUSED when running "http://localhost:58883/session" with method "POST" and args "{"capabilities":{"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"binary":"C:\\Users\\Elena\\AppData\\Local\\Temp\\firefox\\win64-nightly_135.0a1\\firefox\\firefox.exe","args":["-headless"],"prefs":{"browser.startup.homepage":"about:blank"}},"webSocketUrl":true,"unhandledPromptBehavior":"ignore"},"firstMatch":[{}]}}"
+2024-12-05T11:52:04.084Z ERROR webdriver: Error: WebDriverError: Request failed with error code ECONNREFUSED when running "http://localhost:58883/session" with method "POST" and args "{"capabilities":{"alwaysMatch":{"browserName":"firefox","moz:firefoxOptions":{"binary":"C:\\Users\\Elena\\AppData\\Local\\Temp\\firefox\\win64-nightly_135.0a1\\firefox\\firefox.exe","args":["-headless"],"prefs":{"browser.startup.homepage":"about:blank"}},"webSocketUrl":true,"unhandledPromptBehavior":"ignore"},"firstMatch":[{}]}}"
+    at FetchRequest._libRequest (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1607:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async FetchRequest._request (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1617:20)
+    at async startWebDriverSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1022:16)
+    at async _WebDriver.newSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1238:41)
+    at async remote (C:\Users\Elena\Desktop\Practice2\node_modules\@wdio\runner\node_modules\webdriverio\build\index.js:7810:20)
+    at async Runner._startSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:791:23)
+    at async Runner._initSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:765:22)
+    at async Runner.run (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:672:16)
+2024-12-05T11:52:04.121Z ERROR @wdio/runner: Error: Failed to create session.
+Unable to connect to "http://localhost:58883/", make sure browser driver is running on that address.
+It seems like the service failed to start or is rejecting any connections.
+    at startWebDriverSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1026:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async _WebDriver.newSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/webdriver/build/node.js:1238:41)
+    at async remote (C:\Users\Elena\Desktop\Practice2\node_modules\@wdio\runner\node_modules\webdriverio\build\index.js:7810:20)
+    at async Runner._startSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:791:23)
+    at async Runner._initSession (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:765:22)
+    at async Runner.run (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:672:16)

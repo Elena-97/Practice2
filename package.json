@@ -1,0 +1,17 @@
+{
+  "name": "Practice2",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.2.14",
+    "@wdio/cli": "^9.4.1",
+    "@wdio/local-runner": "^9.4.1",
+    "@wdio/mocha-framework": "^9.2.8",
+    "@wdio/spec-reporter": "^9.2.14",
+    "@wdio/visual-service": "^6.2.2",
+    "chromedriver": "^131.0.2",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "scripts": {
+    "wdio": "wdio run wdio.conf.js"
+  }
+}

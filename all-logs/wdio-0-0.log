@@ -1,0 +1,70 @@
+2024-12-05T11:51:57.924Z INFO @wdio/local-runner: Run worker command: run
+2024-12-05T11:51:58.569Z WARN @wdio/mocha-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialized.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): file:///C:/Users/Elena/Desktop/Practice2/test/specs/test.specs.js
+Error: SyntaxError[ @C:\Users\Elena\Desktop\Practice2\test\specs\test.specs.js ]: Identifier 'assert' has already been declared
+    at compileSourceTextModule (node:internal/modules/esm/utils:338:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:102:18)
+    at #translate (node:internal/modules/esm/loader:437:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:484:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:115:19)
+2024-12-05T11:51:58.572Z INFO webdriver: Initiate new session using the WebDriver protocol
+2024-12-05T11:51:58.572Z INFO @wdio/utils: Connecting to existing driver at http://localhost:9515/
+2024-12-05T11:51:58.574Z INFO webdriver: [POST] http://localhost:9515/session
+2024-12-05T11:51:58.574Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      webSocketUrl: true,
+      unhandledPromptBehavior: 'ignore'
+    },
+    firstMatch: [ {} ]
+  }
+}
+2024-12-05T11:51:59.276Z INFO webdriver: Register BiDi handler for session with id d06b222b0e494d097cda15cbbbb6878e
+2024-12-05T11:51:59.276Z INFO webdriver: Connect to webSocketUrl ws://127.0.0.1:9515/session/d06b222b0e494d097cda15cbbbb6878e
+2024-12-05T11:51:59.287Z INFO webdriver: Connected session to Bidi protocol
+2024-12-05T11:51:59.289Z INFO webdriver: COMMAND getWindowHandle()
+2024-12-05T11:51:59.290Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["log.entryAdded","browsingContext.navigationStarted"]}
+2024-12-05T11:51:59.292Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[1319 bytes]>, contexts: undefined }
+2024-12-05T11:51:59.292Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted","network.responseCompleted","network.beforeRequestSent","network.fetchError"]}
+2024-12-05T11:51:59.292Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.userPromptOpened"]}
+2024-12-05T11:51:59.293Z INFO webdriver: COMMAND getWindowHandle()
+2024-12-05T11:51:59.293Z INFO webdriver: Connected to WebDriver Bidi interface at ws://127.0.0.1:9515/session/d06b222b0e494d097cda15cbbbb6878e
+2024-12-05T11:51:59.293Z INFO webdriver: [GET] http://localhost:9515/session/d06b222b0e494d097cda15cbbbb6878e/window
+2024-12-05T11:51:59.295Z INFO webdriver: [GET] http://localhost:9515/session/d06b222b0e494d097cda15cbbbb6878e/window
+2024-12-05T11:51:59.296Z INFO webdriver: COMMAND getWindowHandle()
+2024-12-05T11:51:59.296Z INFO webdriver: [GET] http://localhost:9515/session/d06b222b0e494d097cda15cbbbb6878e/window
+2024-12-05T11:51:59.299Z INFO webdriver: RESULT 5AD7FBECCF38A87D7B9ED86931558B9B
+2024-12-05T11:51:59.300Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[220 bytes]>","awaitPromise":true,"arguments":[{"type":"string","value":"var __defProp = Object.defineProperty;var __name = function (target, value) { return __defProp(target, 'name', { value: value, configurable: true }); };var __globalThis = (typeof globalThis === 'object' && globalThis) || (typeof window === 'object' && window);__globalThis.__name = __name;"}],"target":{"context":"5AD7FBECCF38A87D7B9ED86931558B9B"}}
+2024-12-05T11:51:59.303Z INFO webdriver: RESULT 5AD7FBECCF38A87D7B9ED86931558B9B
+2024-12-05T11:51:59.304Z INFO webdriver: RESULT 5AD7FBECCF38A87D7B9ED86931558B9B
+2024-12-05T11:51:59.304Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[482 bytes]>, contexts: ["5AD7FBECCF38A87D7B9ED86931558B9B"] }
+2024-12-05T11:51:59.307Z INFO webdriver: BIDI RESULT {"id":1,"result":{},"type":"success"}
+2024-12-05T11:51:59.310Z INFO webdriver: BIDI RESULT {"id":4,"result":{},"type":"success"}
+2024-12-05T11:51:59.310Z INFO webdriver: BIDI RESULT {"id":2,"result":{"script":"59049d7f-3c70-4a61-afcc-1ce6fee67944"},"type":"success"}
+2024-12-05T11:51:59.334Z INFO webdriver: BIDI RESULT {"id":3,"result":{},"type":"success"}
+2024-12-05T11:51:59.338Z INFO webdriver: BIDI RESULT {"id":5,"result":{"realm":"2726236284405971517.6257864425298884952","result":{"type":"undefined"},"type":"success"},"type":"success"}
+2024-12-05T11:51:59.339Z INFO webdriver: BIDI RESULT {"id":6,"result":{"script":"694c492e-7766-42af-abd3-6dfdec2dd631"},"type":"success"}
+2024-12-05T11:51:59.340Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["script.message"]}
+2024-12-05T11:51:59.342Z INFO webdriver: BIDI RESULT {"id":7,"result":{},"type":"success"}
+2024-12-05T11:51:59.342Z INFO webdriverio:PolyfillManager: polyfill script added
+2024-12-05T11:51:59.344Z ERROR @wdio/runner: Error: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialized.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): file:///C:/Users/Elena/Desktop/Practice2/test/specs/test.specs.js
+Error: SyntaxError[ @C:\Users\Elena\Desktop\Practice2\test\specs\test.specs.js ]: Identifier 'assert' has already been declared
+    at compileSourceTextModule (node:internal/modules/esm/utils:338:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:102:18)
+    at #translate (node:internal/modules/esm/loader:437:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:484:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:115:19)
+    at MochaAdapter._loadFiles (C:\Users\Elena\Desktop\Practice2\node_modules\@wdio\mocha-framework\build\index.js:212:29)
+    at async MochaAdapter.init (C:\Users\Elena\Desktop\Practice2\node_modules\@wdio\mocha-framework\build\index.js:193:5)
+    at async Object.adapterFactory.init (C:\Users\Elena\Desktop\Practice2\node_modules\@wdio\mocha-framework\build\index.js:332:20)
+    at async Runner.run (file:///C:/Users/Elena/Desktop/Practice2/node_modules/@wdio/runner/build/index.js:667:23)
+2024-12-05T11:51:59.350Z INFO webdriver: COMMAND deleteSession()
+2024-12-05T11:51:59.350Z INFO webdriver: [DELETE] http://localhost:9515/session/d06b222b0e494d097cda15cbbbb6878e
+2024-12-05T11:51:59.417Z INFO webdriver: RESULT null
+2024-12-05T11:51:59.418Z INFO webdriver: Close Bidi connection to ws://127.0.0.1:9515/session/d06b222b0e494d097cda15cbbbb6878e
