@@ -12,6 +12,10 @@
     "wdio-chromedriver-service": "^8.1.1"
   },
   "scripts": {
-    "wdio": "wdio run wdio.conf.js"
+    "wdio": "wdio run wdio.conf.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chai": "^5.1.2"
   }
 }

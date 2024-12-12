@@ -20,15 +20,16 @@ export const config = {
     // The path of the spec files will be resolved relative from the directory of
     // of the config file unless it's absolute.
     //
+    
 
    // Set the number of times to retry running a test suite before giving up.
    specFileRetries: 1, // This means run once initially, retry once upon failure. Total 2 executions allowed.
     
-   // Delay between retries
+//    // Delay between retries
    specFileRetriesDelay: 0, // Set time in seconds between retries. Adjust as needed.
    
-   // If you wish to have WebdriverIO clean up between retries set to true, default is false
-   specFileRetriesDeferred: false,
+//    // If you wish to have WebdriverIO clean up between retries set to true, default is false
+//    specFileRetriesDeferred: false,
 
     specs: [
             './test/specs/*.js'
@@ -69,9 +70,9 @@ export const config = {
     capabilities: [{
         maxInstances: 10,
         browserName: 'chrome',
-    //     'goog:chromeOptions': {
-    //         args: ['--headless', '--disable-gpu', '--window-size=1920,1080']
-    //     }
+        'goog:chromeOptions': {
+            args: ['--headless', '--disable-gpu', '--window-size=1920,1080']
+        }
     }, {
         maxInstances: 10,
         browserName: 'firefox',
@@ -116,7 +117,7 @@ export const config = {
     // gets prepended directly.
     baseUrl: 'http://localhost:8080',
     //
-    // Default timeout for all waitFor* commands.
+    // // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
@@ -142,13 +143,13 @@ export const config = {
     
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 1,
+    specFileRetries:2,
     //
     // Delay in seconds between the spec file retry attempts
-    // specFileRetriesDelay: 0,
+    specFileRetriesDelay: 0,
     //
     // Whether or not retried spec files should be retried immediately or deferred to the end of the queue
-    // specFileRetriesDeferred: false,
+    specFileRetriesDeferred: false,
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
@@ -171,7 +172,9 @@ export const config = {
     // it and to build services around it. You can either apply a single function or an array of
     // methods to it. If one of them returns with a promise, WebdriverIO will wait until that promise got
     // resolved to continue.
+    
     /**
+     * 
      * Gets executed once before all workers get launched.
      * @param {object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
@@ -233,6 +236,12 @@ export const config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
+    before: async () => {
+        await import('expect-webdriverio');
+        global.wdioExpect = global.expect;
+        const chai = await import('chai');
+        global.expect = chai.expect;
+    },
     // beforeTest: function (test, context) {
     // },
     /**
